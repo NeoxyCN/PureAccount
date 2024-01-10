@@ -8,13 +8,13 @@ func main() {
 	v1 := r.Group("/v1")
 	{
 		v1.GET("/add", Add)
+		v1.GET("/update", Add)
+		v1.GET("/check", Add)
+		v1.GET("/overview", Add)
+		v1.DELETE("/delete", Add)
+
 	}
 
-	//r.GET("/ping", func(c *gin.Context) {
-	//	c.JSON(200, gin.H{
-	//		"message": "pong",
-	//	})
-	//})
 	r.Run()
 }
 
